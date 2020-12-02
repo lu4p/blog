@@ -12,9 +12,6 @@ minify:
     disableXML: true
     minifyOutput: true
 
-disqusShortname: lu4p
-
-
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: lu4p
