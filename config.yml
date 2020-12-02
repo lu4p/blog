@@ -1,0 +1,47 @@
+baseURL: "https://lu4p.github.io"
+title: lu4p's blog
+paginate: 5
+theme: hugo-PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+disqusShortname: lu4p
+
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: lu4p
+    description: "ExampleSite description"
+    author: lu4p
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    comments: true
+    defaultTheme: auto
+    disableThemeToggle: false
+    disableSpecial1stPost: false
+
+    label:
+        text: "lu4p"
+
+    # home-info mode
+    homeInfoParams:
+        Title: "Hi there \U0001F44B"
+        Content: Welcome to my blog
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/lu4p"
+        - name: twitter
+          url: "https://twitter.com/lu4p3"
+        - name: keybase
+          url: "https://keybase.io/lu4p"
+        - name: slack
+          url: "https://gophers.slack.com/team/U0164H6DG2K"
