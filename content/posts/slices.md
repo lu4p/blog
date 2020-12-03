@@ -210,4 +210,10 @@ name                  time/op
 So in a simple use case preallocating the slice with `make` seems to be about 2-4 times faster. 
 Although this is significant, in real-world scenarios it often doesn't really matter because appending is fast enough regardless.
 
+If you don't know the number of elements a to which a slice will grow, 
+it often makes little sense to allocate memory with make beforehand.
+Of course there are exceptions from this, 
+sometimes you know at least the order of magnitude to which a slice will grow,
+then it can make sense to allocate a slice with a cap similar to the ballpark of expected elements.
+
 Thanks to [Hu1buerger](https://github.com/Hu1buerger), for helping with the investigation. 
