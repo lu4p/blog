@@ -209,3 +209,5 @@ name                  time/op
 ```
 So in a simple use case preallocating the slice with `make` seems to be about 2-4 times faster. 
 Although this is significant, in real-world scenarios it often doesn't really matter because appending is fast enough regardless.
+
+Thanks to [Hu1buerger](https://github.com/Hu1buerger), for helping with the investigation. 
