@@ -64,7 +64,6 @@ package main
 
 import (
 	"fmt"
-	"unsafe"
 )
 
 func main() {
@@ -79,16 +78,16 @@ func main() {
 			continue
 		}
 
-		firstElmPt := unsafe.Pointer(&foo[0])
+		first := &foo[0]
 
 		beforeCap := cap(foo)
 
 		foo = append(foo, i)
 
-		firstElmNewPt := unsafe.Pointer(&foo[0])
+		firstNew := &foo[0]
 
 		// if the start of the underlying array changed
-		if firstElmNewPt != firstElmPt {
+		if firstNew != first {
 			afterCap, afterLen := cap(foo), len(foo)
 
 			capRatio := float64(afterCap) / float64(beforeCap)
