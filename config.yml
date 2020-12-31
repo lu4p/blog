@@ -15,7 +15,7 @@ minify:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: lu4p
-    description: "ExampleSite description"
+    description: "I write post about technical topics, mainly golang."
     author: lu4p
 
     ShowReadingTime: true
