@@ -1,7 +1,7 @@
 ---
 title: "Understanding HTML templates in Go (golang)"
 date: 2020-12-30T03:28:14+01:00
-draft: false
+tags: ["golang", "templates"]
 ---
 
 

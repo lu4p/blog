@@ -1,7 +1,7 @@
 ---
-title: "Inner workings of allocating slices with go (golang)"
+title: "Inner workings of allocating slices with Go (golang)"
 date: 2020-12-02T22:23:20+01:00
-draft: false
+tags: ["golang"]
 ---
 
 I wasn't sure what the performance impact of preallocating a slice with `make` vs. 
